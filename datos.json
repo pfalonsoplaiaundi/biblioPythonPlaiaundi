@@ -1,0 +1,552 @@
+{
+    "libros": [
+        {
+            "codigo": 3,
+            "titulo": "1984",
+            "autor": "George Orwell",
+            "ano": "1920",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 23,
+            "titulo": "1984 #2",
+            "autor": "George Orwell",
+            "ano": "1992",
+            "categoria": "Novela",
+            "fecPrestamo": "2025-10-20",
+            "codSocio": 2
+        },
+        {
+            "codigo": 43,
+            "titulo": "1984 #3",
+            "autor": "George Orwell",
+            "ano": "1891",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 20,
+            "titulo": "Asesinato en el Orient Express",
+            "autor": "Agatha Christie",
+            "ano": "1893",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 40,
+            "titulo": "Asesinato en el Orient Express #2",
+            "autor": "Agatha Christie",
+            "ano": "1934",
+            "categoria": "Histórico",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 2,
+            "titulo": "Cien años de soledad",
+            "autor": "Gabriel García Márquez",
+            "ano": "1989",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 22,
+            "titulo": "Cien años de soledad #2",
+            "autor": "Gabriel García Márquez",
+            "ano": "1976",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 42,
+            "titulo": "Cien años de soledad #3",
+            "autor": "Gabriel García Márquez",
+            "ano": "1939",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 7,
+            "titulo": "Crimen y castigo",
+            "autor": "Fiódor Dostoyevski",
+            "ano": "1900",
+            "categoria": "Histórico",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 27,
+            "titulo": "Crimen y castigo #2",
+            "autor": "Fiódor Dostoyevski",
+            "ano": "1959",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 47,
+            "titulo": "Crimen y castigo #3",
+            "autor": "Fiódor Dostoyevski",
+            "ano": "1906",
+            "categoria": "Novela",
+            "fecPrestamo": "2025-10-14",
+            "codSocio": 3
+        },
+        {
+            "codigo": 12,
+            "titulo": "Donde los árboles cantan",
+            "autor": "Laura Gallego",
+            "ano": "1869",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 32,
+            "titulo": "Donde los árboles cantan #2",
+            "autor": "Laura Gallego",
+            "ano": "1999",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 1,
+            "titulo": "El Quijote",
+            "autor": "Miguel de Cervantes",
+            "ano": "1802",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 21,
+            "titulo": "El Quijote #2",
+            "autor": "Miguel de Cervantes",
+            "ano": "1909",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 41,
+            "titulo": "El Quijote #3",
+            "autor": "Miguel de Cervantes",
+            "ano": "1878",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 19,
+            "titulo": "El alquimista",
+            "autor": "Paulo Coelho",
+            "ano": "1951",
+            "categoria": "Histórico",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 39,
+            "titulo": "El alquimista #2",
+            "autor": "Paulo Coelho",
+            "ano": "1831",
+            "categoria": "Ensayo",
+            "fecPrestamo": "2025-11-07",
+            "codSocio": 4
+        },
+        {
+            "codigo": 18,
+            "titulo": "El código Da Vinci",
+            "autor": "Dan Brown",
+            "ano": "1981",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 38,
+            "titulo": "El código Da Vinci #2",
+            "autor": "Dan Brown",
+            "ano": "1844",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 10,
+            "titulo": "El nombre del viento",
+            "autor": "Patrick Rothfuss",
+            "ano": "1921",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 30,
+            "titulo": "El nombre del viento #2",
+            "autor": "Patrick Rothfuss",
+            "ano": "1942",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 50,
+            "titulo": "El nombre del viento #3",
+            "autor": "Patrick Rothfuss",
+            "ano": "1839",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 11,
+            "titulo": "El señor de los anillos",
+            "autor": "J. R. R. Tolkien",
+            "ano": "1878",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 31,
+            "titulo": "El señor de los anillos #2",
+            "autor": "J. R. R. Tolkien",
+            "ano": "1839",
+            "categoria": "Novela",
+            "fecPrestamo": "2025-10-19",
+            "codSocio": 8
+        },
+        {
+            "codigo": 13,
+            "titulo": "Fahrenheit 451",
+            "autor": "Ray Bradbury",
+            "ano": "1954",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 33,
+            "titulo": "Fahrenheit 451 #2",
+            "autor": "Ray Bradbury",
+            "ano": "1805",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 9,
+            "titulo": "It",
+            "autor": "Stephen King",
+            "ano": "1963",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 29,
+            "titulo": "It #2",
+            "autor": "Stephen King",
+            "ano": "1871",
+            "categoria": "Ensayo",
+            "fecPrestamo": "2025-11-11",
+            "codSocio": null
+        },
+        {
+            "codigo": 49,
+            "titulo": "It #3",
+            "autor": "Stephen King",
+            "ano": "1900",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 14,
+            "titulo": "La historia interminable",
+            "autor": "Michael Ende",
+            "ano": "1879",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 34,
+            "titulo": "La historia interminable #2",
+            "autor": "Michael Ende",
+            "ano": "1914",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 16,
+            "titulo": "La ladrona de libros",
+            "autor": "Markus Zusak",
+            "ano": "1958",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 36,
+            "titulo": "La ladrona de libros #2",
+            "autor": "Markus Zusak",
+            "ano": "1850",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 6,
+            "titulo": "La sombra del viento",
+            "autor": "Carlos Ruiz Zafón",
+            "ano": "1942",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 26,
+            "titulo": "La sombra del viento #2",
+            "autor": "Carlos Ruiz Zafón",
+            "ano": "1937",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 46,
+            "titulo": "La sombra del viento #3",
+            "autor": "Carlos Ruiz Zafón",
+            "ano": "1838",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 17,
+            "titulo": "Los juegos del hambre",
+            "autor": "Suzanne Collins",
+            "ano": "1824",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 37,
+            "titulo": "Los juegos del hambre #2",
+            "autor": "Suzanne Collins",
+            "ano": "1903",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 8,
+            "titulo": "Los pilares de la Tierra",
+            "autor": "Ken Follett",
+            "ano": "2017",
+            "categoria": "Novela",
+            "fecPrestamo": "2025-11-10",
+            "codSocio": 7
+        },
+        {
+            "codigo": 28,
+            "titulo": "Los pilares de la Tierra #2",
+            "autor": "Ken Follett",
+            "ano": "1994",
+            "categoria": "Terror",
+            "fecPrestamo": "2025-10-28",
+            "codSocio": 1
+        },
+        {
+            "codigo": 48,
+            "titulo": "Los pilares de la Tierra #3",
+            "autor": "Ken Follett",
+            "ano": "1948",
+            "categoria": "Terror",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 5,
+            "titulo": "Matar a un ruiseñor",
+            "autor": "Harper Lee",
+            "ano": "1814",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": "2025-10-25",
+            "codSocio": 6
+        },
+        {
+            "codigo": 25,
+            "titulo": "Matar a un ruiseñor #2",
+            "autor": "Harper Lee",
+            "ano": "1922",
+            "categoria": "Histórico",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 45,
+            "titulo": "Matar a un ruiseñor #3",
+            "autor": "Harper Lee",
+            "ano": "1946",
+            "categoria": "Novela",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 4,
+            "titulo": "Orgullo y prejuicio",
+            "autor": "Jane Austen",
+            "ano": "2015",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 24,
+            "titulo": "Orgullo y prejuicio #2",
+            "autor": "Jane Austen",
+            "ano": "1836",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 44,
+            "titulo": "Orgullo y prejuicio #3",
+            "autor": "Jane Austen",
+            "ano": "1908",
+            "categoria": "Ciencia Ficción",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 15,
+            "titulo": "Rebelión en la granja",
+            "autor": "George Orwell",
+            "ano": "1976",
+            "categoria": "Ensayo",
+            "fecPrestamo": null,
+            "codSocio": null
+        },
+        {
+            "codigo": 35,
+            "titulo": "Rebelión en la granja #2",
+            "autor": "George Orwell",
+            "ano": "2010",
+            "categoria": "Histórico",
+            "fecPrestamo": "2025-10-22",
+            "codSocio": 5
+        }
+    ],
+    "socios": [
+        {
+            "codigo": 1,
+            "nombre": "Ana García",
+            "email": "ana.garcía@example.com",
+            "codLibro": 28
+        },
+        {
+            "codigo": 5,
+            "nombre": "Carmen Sánchez",
+            "email": "carmen.sánchez@example.com",
+            "codLibro": 35
+        },
+        {
+            "codigo": 14,
+            "nombre": "Fernando Alonso",
+            "email": "fernando.alonso@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 11,
+            "nombre": "Isabel Ramírez",
+            "email": "isabel.ramírez@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 8,
+            "nombre": "Javier Gómez",
+            "email": "javier.gómez@example.com",
+            "codLibro": 31
+        },
+        {
+            "codigo": 4,
+            "nombre": "Juan Martínez",
+            "email": "juan.martínez@example.com",
+            "codLibro": 39
+        },
+        {
+            "codigo": 9,
+            "nombre": "Laura Díaz",
+            "email": "laura.díaz@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 7,
+            "nombre": "Lucía Pérez",
+            "email": "lucía.pérez@example.com",
+            "codLibro": 8
+        },
+        {
+            "codigo": 2,
+            "nombre": "Luis Fernández",
+            "email": "luis.fernández@example.com",
+            "codLibro": 23
+        },
+        {
+            "codigo": 13,
+            "nombre": "Marta Moreno",
+            "email": "marta.moreno@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 3,
+            "nombre": "María López",
+            "email": "maría.lópez@example.com",
+            "codLibro": 47
+        },
+        {
+            "codigo": 10,
+            "nombre": "Miguel Torres",
+            "email": "miguel.torres@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 15,
+            "nombre": "Patricia Ruiz",
+            "email": "patricia.ruiz@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 6,
+            "nombre": "Pedro Rodríguez",
+            "email": "pedro.rodríguez@example.com",
+            "codLibro": 5
+        },
+        {
+            "codigo": 12,
+            "nombre": "Sergio Jiménez",
+            "email": "sergio.jiménez@example.com",
+            "codLibro": null
+        },
+        {
+            "codigo": 16,
+            "nombre": "Pablo",
+            "email": "pablo@example.com",
+            "codLibro": null
+        }
+    ]
+}

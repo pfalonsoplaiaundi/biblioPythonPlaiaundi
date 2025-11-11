@@ -2,8 +2,10 @@ from libro import Libro
 from socio import Socio
 from menu import Menu
 from tabla import Tabla
+import os
 import datetime
 import time
+import json
 
 cache = []
 
@@ -152,50 +154,66 @@ def devolverLibro():
        tabla.render()
     printFin()
 
-# --------------- WIP ------------------
 
 def prestamosActuales():
     printTitulo("Prestamos actuales")
     global cache
     libros = cache[0]
+    libros = sorted(libros, key=lambda x: x.codigo)
     socios = cache[1]
     datos = []
-    for libro, socio in zip(libros, socios):
-        if libro.fecPrestamo is not None:
+    for socio in socios:
+        if socio.codLibro is not None:
             datos.append([
-                libro.fecPrestamo,
-                libro.titulo,
+                libros[socio.codLibro-1].fecPrestamo,
+                libros[socio.codLibro-1].codigo,
+                libros[socio.codLibro-1].titulo,
+                socio.codigo,
                 socio.nombre
             ])
-    tabla = Tabla(["Fecha prestamo","Libro","Socio"], datos)
+    tabla = Tabla(["Fecha prestamo","Cod Libro","Titulo","Cod Socio","Socio"], datos)
     tabla.render()
     printFin()
 
 def nuevoSocio():
-    menu = Menu("Nuevo Socio WIP")
-    menu.render()
+    printTitulo("Nuevo socio")
+    global cache
+    socios = cache[1]
+    id = 0
+    for socio in socios:
+        id = socio.codigo if socio.codigo > id else id
+    socio = Socio(id+1, input("Nombre: "), input("Email: "))
+    socios.append(socio)
+    printFin()
+
+def guardarCache():
+    global cache
+    libros_dict = [libro.__dict__ for libro in cache[0]]
+    socios_dict = [socio.__dict__ for socio in cache[1]]
+    data = {
+        "libros": libros_dict,
+        "socios": socios_dict
+    }
+    with open("datos.json", "w", encoding="utf-8") as a:
+        json.dump(data, a, indent=4, ensure_ascii=False)
 
 def cargarDatos():
-    libros = [
-            Libro(1, "El Quijote", "Cervantes", "1800", "Novela"),
-            Libro(2, "1984", "George Orwell", "1800", "Novela"),
-            Libro(3, "It", "Stephen King", "1800", "Novela", "2025-10-10"),
-        ]
-    socios = [
-            Socio(1, "Pepe", "pepe@test.com"),
-            Socio(2, "Paco", "paco@test.com"),
-            Socio(3, "Pili", "pili@test.com", 3)
-        ]
+    if os.path.exists("datos.json"):
+        with open("datos.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+        libros = [Libro(**libro) for libro in data["libros"]]
+        libros = sorted(libros, key=lambda x: x.titulo)
+        socios = [Socio(**socio) for socio in data["socios"]]
+        socios = sorted(socios, key=lambda x: x.nombre)
+        return libros, socios
     return libros, socios
 
-# --------------- END WIP ------------------
-
 def Main(bWork = False):
-    # 1.Cargar ficheros de libros y socios
+    # 1.Cargar ficheros de libros y socios si es el arranque
     if not(bWork) :
         global cache
         cache = cargarDatos()
-        print(f"Cache cargada : {cache}")
+        
     # 2.Menu -> 0.Salir, 1.Lista libros libres, 2. Buscar libro, 3. Prestar libro, 4. Devolver libro, 5. Socios con libros y 6. Añadir socio
     menu = Menu("Menu", 
                 "Salir", 
@@ -208,6 +226,7 @@ def Main(bWork = False):
                 )
     match (menu.render()):
         case 0:
+            guardarCache()
             return
         case 1:
             librosDisponibles()
@@ -227,7 +246,5 @@ def Main(bWork = False):
         case 6:
             nuevoSocio()
             Main(True)
-    # Readme.txt
-    # Gestion del tiempo
     return
 Main()
