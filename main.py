@@ -7,17 +7,21 @@ import datetime
 import time
 import json
 
+# variable que guardar la informacion cargada del archivo
 cache = []
 
+# imprime el inicio de cada funcion
 def printTitulo(titulo):
     print(f"\n{f" {titulo} ":-^40}\n")
     
+# imprime un separado de cada funcion
 def printFin():
     print()
     print("-"*40)
     time.sleep(0.1)
     print()
 
+# despliega una lista con los libros que no estan en prestamo
 def librosDisponibles():
     printTitulo("LibrosDisponibles")
     global cache
@@ -41,6 +45,8 @@ def librosDisponibles():
     tabla.render()
     printFin()
 
+# busca un libro por cualquier dato de los que contiene mediante el toString modificado y despliega una lista de los que encuentre.
+# si se usa un enter sin introducir informacion te despliega todos los datos
 def buscarLibro():
     printTitulo("Busqueda de libros")
     global cache
@@ -71,7 +77,8 @@ def buscarLibro():
     tabla = Tabla(["Codigo", "Titulo", "Autor", "Año", "Categoria", "Fecha prestamo"], listaLibros)
     tabla.render()
     printFin()
-    
+
+# sirve para el prestamo de libros, comprobando su disponibilidad tanto de libro como de socio y los actualiza.
 def prestarLibro():
     printTitulo("Prestamo de libros")
     global cache
@@ -117,7 +124,7 @@ def prestarLibro():
        tabla.render()
     printFin()
 
-
+# comprueba que el prestamo es correcto y devuelve el libro y el socio a un estado disponible
 def devolverLibro():
     printTitulo("Devolver libro")
     global cache
@@ -154,7 +161,7 @@ def devolverLibro():
        tabla.render()
     printFin()
 
-
+# muestra los prestamos actuales
 def prestamosActuales():
     printTitulo("Prestamos actuales")
     global cache
@@ -175,6 +182,7 @@ def prestamosActuales():
     tabla.render()
     printFin()
 
+# utilidad para crear un nuevo socio
 def nuevoSocio():
     printTitulo("Nuevo socio")
     global cache
@@ -186,6 +194,7 @@ def nuevoSocio():
     socios.append(socio)
     printFin()
 
+# guarda la informacion en cache en el archivo en formato json
 def guardarCache():
     global cache
     libros_dict = [libro.__dict__ for libro in cache[0]]
@@ -197,6 +206,7 @@ def guardarCache():
     with open("datos.json", "w", encoding="utf-8") as a:
         json.dump(data, a, indent=4, ensure_ascii=False)
 
+# carga los datos del archivo json y los convierte en objetos
 def cargarDatos():
     if os.path.exists("datos.json"):
         with open("datos.json", "r", encoding="utf-8") as f:
@@ -208,6 +218,7 @@ def cargarDatos():
         return libros, socios
     return libros, socios
 
+# FUNCION PRINCIPAL DEL PROGRAMA
 def Main(bWork = False):
     # 1.Cargar ficheros de libros y socios si es el arranque
     if not(bWork) :
@@ -247,4 +258,6 @@ def Main(bWork = False):
             nuevoSocio()
             Main(True)
     return
+
+# LLAMADA PARA INICIAR EL PROGRAMA
 Main()

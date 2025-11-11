@@ -1,4 +1,5 @@
 class Libro:
+    # constructor del modelo
     def __init__(self, codigo, titulo, autor, ano, categoria, fecPrestamo = None, codSocio = None):
         self.codigo = codigo
         self.titulo = titulo
@@ -8,5 +9,6 @@ class Libro:
         self.fecPrestamo = fecPrestamo
         self.codSocio = codSocio
         
+    # toString modificado para el uso en busquedas
     def __str__(self):
         return f"{self.codigo}█{self.titulo}█{self.autor}█{self.ano}█{self.categoria}█{self.fecPrestamo}█{self.codSocio}"

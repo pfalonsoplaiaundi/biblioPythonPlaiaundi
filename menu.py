@@ -1,4 +1,5 @@
 class Menu:
+    # Crea un menu a partir del titulo y las opciones dadas en ascii
     def __init__(self, titulo: str, *opciones: str):
         titulo = f" {titulo} "
         ancho = len(titulo) + 2
@@ -20,14 +21,16 @@ class Menu:
         # cierre del marco
         self.menu += f"{'▀' * ancho}"
 
+    # toString
     def __str__(self):
         return self.menu
             
+    # renderiza el menu, para poder generarlo sin mostrarlo del tiron
     def render(self):
         print(self.menu)
         return self.opcion()
      
-    # Selector de opcion       
+    # Selector de opcion que se muestra tras el menu.    
     def opcion(self):
         try:
             opcion = int(input("Elige tu opcion: "))

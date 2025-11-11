@@ -1,11 +1,12 @@
 class Tabla:
+    # constructor de la utilidad tabla
     def __init__(self, cabeceras, datos):
         self.cabeceras = cabeceras
         self.datos = datos
         self.tabla = self.crearTabla()
 
+    # Calcula el ancho de cada columna según cabecera y datos
     def findAnchoColumnas(self):
-        # Calcula el ancho de cada columna según cabecera y datos
         anchos = []
         for i, cabecera in enumerate(self.cabeceras):
             max_len = len(str(cabecera))
@@ -15,6 +16,7 @@ class Tabla:
             anchos.append(max_len + 4)  # +4 de margen visual
         return anchos
 
+    # genera la tabla segun los anchos de columna de los datos y cabecera proporcionados
     def crearTabla(self):
         anchos = self.findAnchoColumnas()
         total = sum(anchos) + len(anchos) + 1
@@ -36,5 +38,6 @@ class Tabla:
         result += "▀" * total
         return result
 
+    # funcion de renderizacion
     def render(self):
         print(self.tabla)
