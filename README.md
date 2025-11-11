@@ -54,8 +54,7 @@ El objetivo es:
 - Internacionalización (soporte para varios idiomas)  
 
 ## 📄 Licencia  
-Este proyecto se distribuye bajo la licencia **MIT** (o la que tú prefieras).  
-*(Agrega aquí el fichero LICENSE si lo vas a incluir.)*
+Ninguna
 
 ---
 
